@@ -1,0 +1,137 @@
+$lightblack: #030303;
+$grey: #7B7B7A;
+$gold: #dab173;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+
+/* HEADER
+------------------------------------------------ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fdf9f2;
+}
+
+.header-logo {
+
+    img {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+nav {
+    margin: 50px 0 70px;
+    
+    ul {
+        list-style: none;
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: $gold;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                display: inline-flex;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+
+/* SLIDER
+------------------------------------------------ */
+
+.slider {
+    height: 100vh;
+    background: url("../../img/slider-bg-1.jpg") no-repeat center right;
+    background-size: cover;
+}
+
+.slider-page {
+    display: flex;
+    height: 100%;
+}
+
+.slider-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.slider-cake {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 70%;
+    }
+}
+
+.slider-text {
+    text-align: center;
+    width: 500px;
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 4em;
+        color: $lightblack;
+    }
+
+    .placeholder {
+        width: 200px;
+        height: 1px;
+        background: $gold;
+        margin: 30px auto;
+    }
+
+    p {
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background: $lightblack;
+        padding: 10px 30px;
+        font-size: 14px;
+        transition: .5s;
+    }
+
+    a:hover {
+        background: $gold;
+        padding: 10px 40px;
+    }
+}
