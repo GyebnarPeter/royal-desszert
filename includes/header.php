@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-logo">
-            <img src="./img/header-logo.png" alt="">
+            <img src="./img/logo-gold.png" alt="">
         </div>
         <nav>
             <ul>
