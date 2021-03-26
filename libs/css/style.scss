@@ -20,6 +20,42 @@ body {
     width: calc(100% - 300px);
 }
 
+@mixin section-header {
+    margin-bottom: 50px;
+    
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: $lightblack;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .decor-line {
+        width: 100px;
+        height: 1px;
+        background: $gold;
+        margin: 0 auto;
+    }
+}
+
+@mixin button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: $lightblack;
+    padding: 10px 30px;
+    font-size: 14px;
+    transition: .5s;
+    letter-spacing: 2px;
+
+    &:hover {
+        background: $gold;
+        padding: 10px 40px;
+    }
+}
+
 
 /* HEADER
 ------------------------------------------------ */
@@ -109,7 +145,7 @@ nav {
         color: $lightblack;
     }
 
-    .placeholder {
+    .slider-placeholder {
         width: 200px;
         height: 1px;
         background: $gold;
@@ -123,17 +159,57 @@ nav {
     }
 
     a {
-        text-decoration: none;
-        color: white;
-        background: $lightblack;
-        padding: 10px 30px;
-        font-size: 14px;
-        transition: .5s;
+        @include button();
+    }
+}
+
+
+/* SAID-ABOUT-US
+------------------------------------------------ */
+
+.said-about-us {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+
+    p {
+        width: 800px;
+        margin: 0 auto;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 50px;
     }
 
-    a:hover {
-        background: $gold;
-        padding: 10px 40px;
+    a {
+        @include button();
+    }
+}
+
+.said-about-us-header {
+    @include section-header();
+}
+
+.opinion-boxes {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.opinion-box {
+    flex: 1;
+
+    h4 {
+        font-family: 'Quicksand', sans-serif;
+        color: $lightblack;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: initial;
+        font-style: italic;
     }
 }
 

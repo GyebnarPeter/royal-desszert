@@ -93,7 +93,7 @@ nav ul li a {
   font-size: 4em;
   color: #030303;
 }
-.slider-text .placeholder {
+.slider-text .slider-placeholder {
   width: 200px;
   height: 1px;
   background: #dab173;
@@ -106,15 +106,86 @@ nav ul li a {
 }
 .slider-text a {
   text-decoration: none;
+  text-transform: uppercase;
   color: white;
   background: #030303;
   padding: 10px 30px;
   font-size: 14px;
   transition: 0.5s;
+  letter-spacing: 2px;
 }
 .slider-text a:hover {
   background: #dab173;
   padding: 10px 40px;
+}
+
+/* SAID-ABOUT-US
+------------------------------------------------ */
+.said-about-us {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+.said-about-us p {
+  width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.said-about-us a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #030303;
+  padding: 10px 30px;
+  font-size: 14px;
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+.said-about-us a:hover {
+  background: #dab173;
+  padding: 10px 40px;
+}
+
+.said-about-us-header {
+  margin-bottom: 50px;
+}
+.said-about-us-header h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #030303;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.said-about-us-header .decor-line {
+  width: 100px;
+  height: 1px;
+  background: #dab173;
+  margin: 0 auto;
+}
+
+.opinion-boxes {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.opinion-box {
+  flex: 1;
+}
+.opinion-box h4 {
+  font-family: "Quicksand", sans-serif;
+  color: #030303;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.opinion-box p {
+  width: initial;
+  font-style: italic;
 }
 
 /* FOOTER
