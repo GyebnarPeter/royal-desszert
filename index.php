@@ -1,6 +1,5 @@
 <?php include 'includes/header.php' ?>
 
-
 <div class="slider">
     <div class="slider-page">
         <div class="slider-content">
@@ -130,6 +129,46 @@
                     <img src="./img/forward.png" alt="">
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="introduction">
+    <div class="introduction-box">
+        <div class="introduction-img">
+            <img src="./img/honey-cocconut.png" alt="">
+        </div>
+        <div class="introduction-data">
+            <div class="introduction-header">
+                <h2>Ízgarancia,<br>nem a szavak az ízek nyelvén</h2>
+                <div class="decor-line"></div>
+            </div>
+            <p>Szeretek mindent megtervezni, és megvalósítani. Imádom a kihívásokat. Ezért bátran vállaltam, hogy a saját receptjeimből készült tortákat leteszteljék, hiszen a visszajelzések adnak motivációt arra, hogy egyre jobb recepteket állítsak össze.</p>
+            <p>Közel 100 ember kóstolta meg a saját receptúra szerint készült gluténmentes és tejfehérje mentes kézműves tortáimat. Köztük olyanok is, akik nem ételallergiásak.</p>
+            <p>100 %-ban állították, hogy nem éreztek különbséget a hagyományos recept alapján készült torta és az általam készített gluténmentes és tejfehérje mentes kézműves torta között.</p>
+            <p>Tudom, hogy könnyebb mondani, mint elhinni, ezért KÓSTOLD MEG!</p>
+            <p>XY Kávézóban Szegeden megkóstolhatod a felségesen finom Royal kézműves tortáimat, és Royal desszertjeimet. Ha neked úgy kényelmesebb, akkor rendeld meg itt a kávézóban!</p>
+            <p>Ha bízol bennem, és most szeretnéd megrendelni, illetve személyesen velem szeretnél egyeztetni, akkor izgatottan várom a megrendelésed!</p>
+            <div><a href="#">Induljon a tervezés!</a></div>
+        </div>
+    </div>
+    <div class="introduction-box">
+        <div class="introduction-data right-align-data">
+            <div class="right-align-box">
+                <div class="introduction-header">
+                    <h2>Érdekel egy kis TITOK a kézműves torta receptemből?</h2>
+                    <div class="decor-line"></div>
+                </div>
+                <p>Biztos vagyok benne, hogy kíváncsi vagy rá, ezért elárulom neked. Attól hasonlít nagyon a hagyományos alapanyagokkal készült tortákhoz, hogy cukrot teszek bele. Ám ha szeretnéd elkészítem neked cukor nélkül is, így ténylegesen mindenmentes lesz, és a végeredmény egy tökéletesen egészséges kézműves torta.</p>
+                <p><b>Miért épp gluténmentes és tejfehérje mentesen kézműves torta?</b></p>
+                <p>Gyermekeim születésével kaptam ezt a nagyon szép feladatot.</p>
+                <p>Az első gyerkőcöm, Viktória tejfehérje érzékenyen született, így az étrendjét eszerint kellett átalakítanom. A tejfehérje mentes receptek elsajátítása napi rutinommá vált. Mivel egyre nagyobb szerepet kapott az életünkben az étel minősége újra visszataláltam gyerekkori szenvedélyemhez a torta sütéshez.</p>
+                <p>A 2. kislányom Viola pedig a tejfehérje érzékenység mellett gluténérzékeny lett, így a tejfehérje mentes receptúra mellett a gluténmentességet is figyelembe kellett vennem. Otthon kísérletezni kezdtem saját magam összeállított torta receptekkel, amelyek garantáltan glutén mentesek, nincs keresztszennyeződés. Addig tökéletesítettem, amíg olyan ízvilágot nem kaptam, amivel olyanok is elégedettek voltak, akik nem ételallergiásak,</p>
+                <div><a href="#">Induljon a tervezés!</a></div>
+            </div>
+        </div>
+        <div class="introduction-img">
+            <img src="./img/strawberry-cookie.png" alt="">
         </div>
     </div>
 </div>

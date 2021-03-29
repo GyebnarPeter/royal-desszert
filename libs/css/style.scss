@@ -284,6 +284,64 @@ nav {
 }
 
 
+/* INTRODUCTION
+------------------------------------------------ */
+
+.introduction-box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.introduction-img {
+    flex: 1;
+}
+
+.introduction-header {
+    @include section-header();
+    
+    h2 {
+        text-align: left;
+    }
+
+    .decor-line {
+        margin: 0;
+    }
+}
+
+.introduction-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+
+    p {
+        width: 70%;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    a {
+        @include button();
+        display: inline-block;
+        margin: 30px 0;
+    }
+}
+
+.right-align-data {
+    align-items: flex-end;
+}
+
+.right-align-box {
+    width: 70%;
+
+    p {
+        width: 100%;
+    }
+}
+
+
 /* FOOTER
 ------------------------------------------------ */
 
