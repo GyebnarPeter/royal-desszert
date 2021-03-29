@@ -26,6 +26,7 @@
             </div>
         </div>
     </footer>
-    </div>
+
+    <script src="./libs/js/nav.js"></script>
 </body>
 </html>

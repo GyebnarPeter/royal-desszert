@@ -1,53 +1,137 @@
 <?php include 'includes/header.php' ?>
 
-<div class="container">
-    <div class="slider">
-        <div class="slider-page">
-            <div class="slider-content">
-                <div class="slider-cake">
-                    <img src="./img/cake-2.webp" alt="">
-                </div>
-            </div>
-            <div class="slider-content">
-                <div class="slider-text">
-                    <h1>Royal Desszert</h1>
-                    <div class="slider-placeholder"></div>
-                    <p>Kézműves torta, ami felségesen finom, közben gluténmentes és tejfehérje mentes is! Most biztosan kételkedsz egy picit. Igaz?</p>
-                    <a href="#">tovább</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="said-about-us">
-        <div class="said-about-us-header">
-            <h2>Rólunk mondták</h2>
-            <div class="decor-line"></div>
-        </div>
-        <p>5 éve kísérletezem ki a recepteket a saját konyhámban, hogy olyan ízvilágot teremtsek, amire ételallergiás vagy, vagy sem azt mond: <b>„Húúú ez finom!”</b><br>
-           Ahogyan nincs két egyforma ember, vagy igény, vagy kívánság, nincs két egyforma torta sem.
-           A saját egyéniségemet a klasszikus könnyed eleganciát ötvözöm a te kéréseiddel, igényeiddel.<br>
-           Így készül el az a kézműves torta, amire azt mondod:
-        </p>
-        <div class="opinion-boxes">
-            <div class="opinion-box">
-                <img src="./img/cookie-1.png" alt="">
-                <h4>Klaudia</h4>
-                <p>"Ez elképesztő lett!"</p>
-            </div>
-            <div class="opinion-box">
-                <img src="./img/cookie-2.png" alt="">
-                <h4>Lilla</h4>
-                <p>"Épp ilyet álmodtam meg, köszönöm!"</p>
-            </div>
-            <div class="opinion-box">
-                <img src="./img/cookie-3.png" alt="">
-                <h4>Péter</h4>
-                <p>"Ez tényleg jól néz ki!</p>
+<div class="slider">
+    <div class="slider-page">
+        <div class="slider-content">
+            <div class="slider-cake">
+                <img src="./img/cake-2.webp" alt="">
             </div>
         </div>
-        <p>Szeretném hallani a te első mondatodat is!<br>Készen állsz a közös felségesen finom kézműves torta kalandra?</p>
-        <a href="#">igen</a>
+        <div class="slider-content">
+            <div class="slider-text">
+                <h1>Royal Desszert</h1>
+                <div class="slider-placeholder"></div>
+                <p>Kézműves torta, ami felségesen finom, közben gluténmentes és tejfehérje mentes is! Most biztosan kételkedsz egy picit. Igaz?</p>
+                <a href="#">tovább</a>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="said-about-us">
+    <div class="said-about-us-header">
+        <h2>Rólunk mondták</h2>
+        <div class="decor-line"></div>
+    </div>
+    <p>5 éve kísérletezem ki a recepteket a saját konyhámban, hogy olyan ízvilágot teremtsek, amire ételallergiás vagy, vagy sem azt mond: <b>„Húúú ez finom!”</b><br>
+        Ahogyan nincs két egyforma ember, vagy igény, vagy kívánság, nincs két egyforma torta sem.
+        A saját egyéniségemet a klasszikus könnyed eleganciát ötvözöm a te kéréseiddel, igényeiddel.<br>
+        Így készül el az a kézműves torta, amire azt mondod:
+    </p>
+    <div class="opinion-boxes">
+        <div class="opinion-box">
+            <img src="./img/cookie-1.png" alt="">
+            <h4>Klaudia</h4>
+            <p>"Ez elképesztő lett!"</p>
+        </div>
+        <div class="opinion-box">
+            <img src="./img/cookie-2.png" alt="">
+            <h4>Lilla</h4>
+            <p>"Épp ilyet álmodtam meg, köszönöm!"</p>
+        </div>
+        <div class="opinion-box">
+            <img src="./img/cookie-3.png" alt="">
+            <h4>Péter</h4>
+            <p>"Ez tényleg jól néz ki!</p>
+        </div>
+    </div>
+    <p>Szeretném hallani a te első mondatodat is!<br>Készen állsz a közös felségesen finom kézműves torta kalandra?</p>
+    <a href="#">igen</a>
+</div>
+
+<div class="cookie-selection-wrapper">
+    <div class="cookie-selection-header">
+        <h2>Kézműves sütemények</h2>
+        <div class="decor-line"></div>
+        <p>ROYAL DESSZERTEK FELSÉGES ÍZVILÁGA</p>
+        <p>Az alkotásban leginkább azt szeretem, hogy a Te igényeid, és a fantáziámban lévő több száz ízvilág eredményeképpen mindig egyedi finomságok készülnek. Ezért az itt felsorolt Royal desszertek mellett folyamatosan más és más ízvilágot készítek, szezonális gyümölcsökkel díszitek, kísérletezgetek, figyelem az aktuális újdonságokat.</p>
+        <p>Épp ezért bármikor szívesen veszem a te ötleteidet is.<br>Bátran használd te is a fantáziád! Alkossunk közösen!</p>
+    </div>
+    <div class="cookie-selection">
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-1.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Klasszíkus felépítésű torták: piskóta és krém váltakozása</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-2.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Tart Latte-k: vékony , roppanós tészta olajos maggal gazdagítva</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-3.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Moussze torták: vékony roppanós tészta, kb 5 cm magas könyed krémmel és egy fényes tükörglazurral</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-4.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Táblás csoki ízlés szerint összeválogatva</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-5.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Bon-bon</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="cookie-selection-box">
+            <div class="selection-img">
+                <img src="./img/sel-6.png" alt="">
+            </div>
+            <div class="selection-data">
+                <h3>Macaron</h3>
+                <a href="#">
+                    teljes választék
+                    <img src="./img/forward.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php include 'includes/footer.php' ?>

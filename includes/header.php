@@ -11,17 +11,21 @@
     <title>Royal Desszert</title>
 </head>
 <body>
+    <div class="header-wrapper">
+        <header>
+            <div class="header-logo">
+                <img src="./img/logo-gold.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Kézműves torta</a></li>
+                    <li><a href="#">Kézműves csokoládé</a></li>
+                    <li><a href="#">Macaronok</a></li>
+                    <li><a href="#">Rólam</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <header>
-        <div class="header-logo">
-            <img src="./img/logo-gold.png" alt="">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Kézműves torta</a></li>
-                <li><a href="#">Kézműves csokoládé</a></li>
-                <li><a href="#">Macaronok</a></li>
-                <li><a href="#">Rólam</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-            </ul>
-        </nav>
     </header>
