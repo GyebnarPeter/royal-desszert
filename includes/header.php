@@ -20,27 +20,27 @@
             <nav>
                 <img src="./img/logo-gold.png" alt="">
                 <ul>
-                    <li><a href="#">Főoldal</a></li>
+                    <li><a href="index.php">Főoldal</a></li>
                     <li class="opening-item">
                         Kézműves torták
                         <i class="fas fa-sort-down"></i>
                         <ul class="submenu">
                             <li><a href="klasszikus-torta.php">Klasszikus torta</a></li>
-                            <li><a href="#">Mousse torta</a></li>
-                            <li><a href="#">Tart Latte</a></li>
+                            <li><a href="mousse-torta.php">Mousse torta</a></li>
+                            <li><a href="tart-latte.php">Tart Latte</a></li>
                         </ul>
                     </li>
                     <li class="opening-item">
                         Kézműves csokoládé
                         <i class="fas fa-sort-down"></i>
                         <ul class="submenu">
-                            <li><a href="#">BonBon</a></li>
-                            <li><a href="#">Táblás csokoládé</a></li>
+                            <li><a href="bon-bon.php">BonBon</a></li>
+                            <li><a href="tablas-csokoladek.php">Táblás csokoládé</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Macaronok</a></li>
-                    <li><a href="#">Rólam</a></li>
-                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="macaron.php">Macaronok</a></li>
+                    <li><a href="rolam.php">Rólam</a></li>
+                    <li><a href="kapcsolat.php">Kapcsolat</a></li>
                 </ul>
             </nav>
             <div class="nav-btn">

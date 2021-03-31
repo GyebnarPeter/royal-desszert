@@ -3,7 +3,7 @@
             <div class="footer-contact footer-box">
                 <h3>Royal Desszert</h3>
                 <div class="footer-placeholder"></div>
-                <p>6724, Szeged, Brüsszeli körút 28</p>
+                <p>6726, Szeged, Kékfestő utca 29.</p>
                 <p>+3620/413-5577</p>
                 <p>info@royaldesszert.hu</p>
             </div>

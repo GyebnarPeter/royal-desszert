@@ -1,6 +1,6 @@
 $lightblack: #030303;
 $grey: #7B7B7A;
-$gold: #dab173;
+$gold: #BD9D51;
 
 * {
     margin: 0;
@@ -33,6 +33,34 @@ body {
     }
 }
 
+@mixin subpage-header {
+    padding: 250px 0;
+    text-align: center;
+    color: white;
+    
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 5em;
+        letter-spacing: 2px;
+    }
+
+    h1::after {
+        content: "";
+        width: 200px;
+        height: 1px;
+        margin: 30px auto;
+        background: $gold;
+        display: block;
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        letter-spacing: 1.5px;
+    }
+}
+
 @mixin button {
     text-decoration: none;
     text-transform: uppercase;
@@ -49,6 +77,85 @@ body {
     }
 }
 
+.cake-box {
+    width: 800px;
+    margin: 50px auto;
+    background: #fafafa;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 3em;
+        margin-bottom: 50px;
+        color: $gold;
+    }
+
+    p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .decor-1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+    }
+
+    .decor-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+    }
+}
+
+.cake-images {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    margin-top: 100px;
+   
+
+    .cake-images-placeholder {
+        padding: 100px;
+
+        span {
+            width: 1px;
+            height: 100%;
+            background: $gold;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .cake-image {
+        display: flex;
+        align-items: center;
+    }
+
+    .cake-image-left {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cake-image-right {
+
+        img {
+            width: 400px;
+            transform: translateY(-200px);
+        }
+    }
+}
+
 
 /* HEADER
 ------------------------------------------------ */
@@ -60,6 +167,7 @@ body {
     width: 100%;
     height: 100px;
     transition: 1s;
+    z-index: 10;
 }
 
 header {
@@ -399,6 +507,87 @@ nav {
 }
 
 
+/* CLASSIC CAKE
+------------------------------------------------ */
+
+.classic-cake-header {
+    @include subpage-header();
+    background: url("../../img/classic-cake.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* MOUSSE CAKE
+------------------------------------------------ */
+
+.mousse-cake-header {
+    @include subpage-header();
+    background: url("../../img/mousse-cake.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* TART LATTE
+------------------------------------------------ */
+
+.tart-latte-header {
+    @include subpage-header();
+    background: url("../../img/tart-latte-cake.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* BONBON
+------------------------------------------------ */
+
+.bonbon-header {
+    @include subpage-header();
+    background: url("../../img/bon-bon.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* CHOCOLATE
+------------------------------------------------ */
+
+.chocolate-header {
+    @include subpage-header();
+    background: url("../../img/chocolate.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* MACARON
+------------------------------------------------ */
+
+.macaron-header {
+    @include subpage-header();
+    background: url("../../img/macaron.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* ABOUT US
+------------------------------------------------ */
+
+.about-us-header {
+    @include subpage-header();
+    background: url("../../img/pink-cake.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+/* CONTACT
+------------------------------------------------ */
+
+.contact-header {
+    @include subpage-header();
+    background: url("../../img/contact.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+
 /* FOOTER
 ------------------------------------------------ */
 
@@ -560,6 +749,29 @@ footer {
     .right-align-box {
         width: 100%;
     }
+
+    .classic-cake-images {
+        display: flex;
+        justify-content: center;
+
+        .cake-image-right {
+
+            img {
+                transform: translateY(-150px);
+            }
+        }
+    }
+
+    .cake-image-left {
+        
+        img {
+            display: none;
+        }
+    }
+
+    .cake-images-placeholder {
+        display: none;
+    }
 }
 
 
@@ -636,6 +848,10 @@ footer {
         flex-direction: column;
     }
 
+    .cake-box {
+        width: 700px;
+    }
+
     .footer-boxes {
         flex-direction: column;
     }
@@ -643,9 +859,7 @@ footer {
     .footer-box {
         width: 100%;
         margin-bottom: 30px;
-    }
-
-    
+    } 
 }
 
 
@@ -685,5 +899,19 @@ footer {
             padding: 0 20px;
         }
     }
-    
+
+    .subpage-header {
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .cake-box {
+        width: 100%;
+    }
 }

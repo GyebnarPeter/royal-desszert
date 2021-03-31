@@ -64,7 +64,7 @@
             </div>
             <div class="selection-data">
                 <h3>Klasszíkus felépítésű torták: piskóta és krém váltakozása</h3>
-                <a href="#">
+                <a href="klasszikus-torta.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>
@@ -76,7 +76,7 @@
             </div>
             <div class="selection-data">
                 <h3>Tart Latte-k: vékony , roppanós tészta olajos maggal gazdagítva</h3>
-                <a href="#">
+                <a href="tart-latte.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>
@@ -88,7 +88,7 @@
             </div>
             <div class="selection-data">
                 <h3>Moussze torták: vékony roppanós tészta, kb 5 cm magas könyed krémmel és egy fényes tükörglazurral</h3>
-                <a href="#">
+                <a href="mousse-torta.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>
@@ -100,7 +100,7 @@
             </div>
             <div class="selection-data">
                 <h3>Táblás csoki ízlés szerint összeválogatva</h3>
-                <a href="#">
+                <a href="tablas-csokoladek.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>
@@ -112,7 +112,7 @@
             </div>
             <div class="selection-data">
                 <h3>Bon-bon</h3>
-                <a href="#">
+                <a href="bon-bon.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>
@@ -124,7 +124,7 @@
             </div>
             <div class="selection-data">
                 <h3>Macaron</h3>
-                <a href="#">
+                <a href="macaron.php">
                     teljes választék
                     <img src="./img/forward.png" alt="">
                 </a>

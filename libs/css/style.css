@@ -9,6 +9,69 @@ body {
   color: gray;
 }
 
+.cake-box {
+  width: 800px;
+  margin: 50px auto;
+  background: #fafafa;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.cake-box h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  margin-bottom: 50px;
+  color: #BD9D51;
+}
+.cake-box p {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.cake-box .decor-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+}
+.cake-box .decor-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+}
+
+.cake-images {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  margin-top: 100px;
+}
+.cake-images .cake-images-placeholder {
+  padding: 100px;
+}
+.cake-images .cake-images-placeholder span {
+  width: 1px;
+  height: 100%;
+  background: #BD9D51;
+  display: block;
+  margin: 0 auto;
+}
+.cake-images .cake-image {
+  display: flex;
+  align-items: center;
+}
+.cake-images .cake-image-left img {
+  width: 100%;
+}
+.cake-images .cake-image-right img {
+  width: 400px;
+  transform: translateY(-200px);
+}
+
 /* HEADER
 ------------------------------------------------ */
 .header-wrapper {
@@ -18,6 +81,7 @@ body {
   width: 100%;
   height: 100px;
   transition: 1s;
+  z-index: 10;
 }
 
 header {
@@ -51,7 +115,7 @@ nav ul {
 }
 nav ul li {
   position: relative;
-  color: #dab173;
+  color: #BD9D51;
   margin-right: 40px;
   font-size: 18px;
   font-weight: 300;
@@ -74,7 +138,7 @@ nav ul li ul li a:hover {
 }
 nav ul li a {
   text-decoration: none;
-  color: #dab173;
+  color: #BD9D51;
   font-family: "Quicksand", sans-serif;
 }
 nav ul li i {
@@ -94,7 +158,7 @@ nav ul li i {
 .nav-btn span {
   width: 100%;
   height: 2px;
-  background: #dab173;
+  background: #BD9D51;
 }
 
 /* SLIDER
@@ -140,7 +204,7 @@ nav ul li i {
 .slider-text .slider-placeholder {
   width: 200px;
   height: 1px;
-  background: #dab173;
+  background: #BD9D51;
   margin: 30px auto;
 }
 .slider-text p {
@@ -159,7 +223,7 @@ nav ul li i {
   letter-spacing: 2px;
 }
 .slider-text a:hover {
-  background: #dab173;
+  background: #BD9D51;
   padding: 10px 40px;
 }
 
@@ -188,7 +252,7 @@ nav ul li i {
   letter-spacing: 2px;
 }
 .said-about-us a:hover {
-  background: #dab173;
+  background: #BD9D51;
   padding: 10px 40px;
 }
 
@@ -206,7 +270,7 @@ nav ul li i {
 .said-about-us-header .decor-line {
   width: 100px;
   height: 1px;
-  background: #dab173;
+  background: #BD9D51;
   margin: 0 auto;
 }
 
@@ -256,7 +320,7 @@ nav ul li i {
 .cookie-selection-header .decor-line {
   width: 100px;
   height: 1px;
-  background: #dab173;
+  background: #BD9D51;
   margin: 0 auto;
 }
 .cookie-selection-header h2 {
@@ -295,7 +359,7 @@ nav ul li i {
 }
 .cookie-selection-box a {
   text-decoration: none;
-  color: #dab173;
+  color: #BD9D51;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -335,7 +399,7 @@ nav ul li i {
 .introduction-header .decor-line {
   width: 100px;
   height: 1px;
-  background: #dab173;
+  background: #BD9D51;
   margin: 0 auto;
 }
 .introduction-header h2 {
@@ -370,7 +434,7 @@ nav ul li i {
   margin: 30px 0;
 }
 .introduction-data a:hover {
-  background: #dab173;
+  background: #BD9D51;
   padding: 10px 40px;
 }
 
@@ -383,6 +447,238 @@ nav ul li i {
 }
 .right-align-box p {
   width: 100%;
+}
+
+/* CLASSIC CAKE
+------------------------------------------------ */
+.classic-cake-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/classic-cake.jpg") no-repeat center center;
+  background-size: cover;
+}
+.classic-cake-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.classic-cake-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.classic-cake-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* MOUSSE CAKE
+------------------------------------------------ */
+.mousse-cake-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/mousse-cake.jpg") no-repeat center center;
+  background-size: cover;
+}
+.mousse-cake-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.mousse-cake-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.mousse-cake-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* TART LATTE
+------------------------------------------------ */
+.tart-latte-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/tart-latte-cake.jpg") no-repeat center center;
+  background-size: cover;
+}
+.tart-latte-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.tart-latte-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.tart-latte-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* BONBON
+------------------------------------------------ */
+.bonbon-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/bon-bon.jpg") no-repeat center center;
+  background-size: cover;
+}
+.bonbon-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.bonbon-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.bonbon-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* CHOCOLATE
+------------------------------------------------ */
+.chocolate-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/chocolate.jpg") no-repeat center center;
+  background-size: cover;
+}
+.chocolate-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.chocolate-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.chocolate-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* MACARON
+------------------------------------------------ */
+.macaron-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/macaron.jpg") no-repeat center center;
+  background-size: cover;
+}
+.macaron-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.macaron-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.macaron-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* ABOUT US
+------------------------------------------------ */
+.about-us-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/pink-cake.jpg") no-repeat center center;
+  background-size: cover;
+}
+.about-us-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.about-us-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.about-us-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+}
+
+/* CONTACT
+------------------------------------------------ */
+.contact-header {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../../img/contact.jpg") no-repeat center center;
+  background-size: cover;
+}
+.contact-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+.contact-header h1::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  margin: 30px auto;
+  background: #BD9D51;
+  display: block;
+}
+.contact-header p {
+  width: 50%;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
 }
 
 /* FOOTER
@@ -418,7 +714,7 @@ footer {
 .footer-box .footer-placeholder {
   width: 100px;
   height: 1px;
-  background: #dab173;
+  background: #BD9D51;
   margin: 20px 0;
 }
 .footer-box p {
@@ -457,13 +753,13 @@ footer {
 .footer-social svg {
   width: 20px;
   height: 20px;
-  fill: #dab173;
+  fill: #BD9D51;
 }
 .footer-social div {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid #dab173;
+  border: 1px solid #BD9D51;
   displaY: flex;
   justify-content: center;
   align-items: center;
@@ -522,6 +818,22 @@ footer {
   .right-align-box {
     width: 100%;
   }
+
+  .classic-cake-images {
+    display: flex;
+    justify-content: center;
+  }
+  .classic-cake-images .cake-image-right img {
+    transform: translateY(-150px);
+  }
+
+  .cake-image-left img {
+    display: none;
+  }
+
+  .cake-images-placeholder {
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
   .slider-cake {
@@ -562,7 +874,7 @@ footer {
   }
   .cookie-selection-box a {
     text-decoration: none;
-    color: #dab173;
+    color: #BD9D51;
     display: inline-flex;
     align-items: center;
     margin-top: 10px;
@@ -573,6 +885,10 @@ footer {
 
   .introduction-box {
     flex-direction: column;
+  }
+
+  .cake-box {
+    width: 700px;
   }
 
   .footer-boxes {
@@ -609,6 +925,17 @@ footer {
   .cookie-selection-header p {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .subpage-header h1 {
+    font-size: 3em;
+  }
+  .subpage-header p {
+    width: 90%;
+  }
+
+  .cake-box {
+    width: 100%;
   }
 }
 
