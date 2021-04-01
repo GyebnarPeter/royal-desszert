@@ -11,6 +11,7 @@ $gold: #BD9D51;
 body {
     font-family: 'Open Sans', sans-serif;
     color: gray;
+    font-size: 14px;
 }
 
 @mixin section-header {
@@ -84,15 +85,24 @@ body {
     padding: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
 
-    h1 {
+    h2 {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
         font-size: 3em;
         margin-bottom: 50px;
         color: $gold;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: $gold;
+        margin: 20px 0;
     }
 
     p {
@@ -100,6 +110,19 @@ body {
         letter-spacing: 1px;
         margin-bottom: 20px;
         font-weight: 300;
+    }
+
+    ul {
+        padding-left: 30px;
+        letter-spacing: 1px;
+        
+        li {
+            margin-bottom: 20px;
+
+            p {
+                margin: 5px 0 5px 10px;
+            }
+        }
     }
 
     .decor-1 {
@@ -516,6 +539,23 @@ nav {
     background-size: cover;
 }
 
+/* .classic-cake {
+
+    ul {
+        list-style: decimal;
+        padding-left: 30px;
+        letter-spacing: 1px;
+
+        li {
+            margin-bottom: 20px;
+
+            p {
+                margin: 5px 0 5px 10px;
+            }
+        }
+    }
+}
+ */
 
 /* MOUSSE CAKE
 ------------------------------------------------ */
@@ -576,6 +616,52 @@ nav {
     background-size: cover;
 }
 
+.about-us {
+    background: url("../../img/about-us-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.about-us-boxes {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-us-box {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 100px 0 100px 50px;
+
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 2.5em;
+        color: $lightblack;
+    }
+
+    h2::after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: $gold;
+        display: block;
+        margin: 40px 0;
+    }
+
+
+    p {
+        margin-bottom: 30px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    a {
+        @include button();
+    }
+}
+
 
 /* CONTACT
 ------------------------------------------------ */
@@ -586,6 +672,62 @@ nav {
     background-size: cover;
 }
 
+.contact {
+    background: url("../../img/gold-2.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.contact-boxes {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact-box {
+    flex: 1;
+    padding: 50px;
+    font-size: 15px;
+
+    .contact-email, .contact-phone {
+        margin-bottom: 30px;
+    }
+
+    .contact-address {
+        margin: 40px 0;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.contact-box-header {
+    margin-bottom: 30px;
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: $lightblack;
+    }
+
+    h3::after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: $gold;
+        margin: 30px 0;
+        display: block;
+    }
+
+    p {
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+}
 
 
 /* FOOTER
@@ -852,6 +994,18 @@ footer {
         width: 700px;
     }
 
+    .about-us {
+        background-position: center left;
+    }
+
+    .about-us-box {
+        padding: 100px 50px;
+    }
+
+    .about-us-box:nth-child(2) {
+        display: none;
+    }
+
     .footer-boxes {
         flex-direction: column;
     }
@@ -913,5 +1067,10 @@ footer {
 
     .cake-box {
         width: 100%;
+    }
+
+    .contact-boxes {
+        
+        flex-direction: column;
     }
 }
