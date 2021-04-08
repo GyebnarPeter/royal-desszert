@@ -1,6 +1,7 @@
 $lightblack: #030303;
 $grey: #7B7B7A;
 $gold: #BD9D51;
+$brown: #311c0f;
 
 * {
     margin: 0;
@@ -12,6 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: gray;
     font-size: 14px;
+    background: rgb(255, 242, 233);
 }
 
 @mixin section-header {
@@ -83,8 +85,6 @@ body {
     margin: 50px auto;
     background: #fafafa;
     padding: 100px;
-    display: flex;
-    flex-direction: column;
     position: relative;
     border: 1px solid rgba(0, 0, 0, .1);
 
@@ -138,6 +138,19 @@ body {
         left: 0;
         width: 60px;
     }
+
+    .decor-3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+    }
+
+    .decor-logo {
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+    }
 }
 
 .cake-images {
@@ -168,13 +181,24 @@ body {
         img {
             width: 100%;
         }
+
+        img:nth-child(2) {
+            transform: translateX(150px) translateY(-50px);
+            border: 10px solid rgb(255, 242, 233);;
+        }
     }
 
     .cake-image-right {
 
-        img {
+        img:nth-child(1) {
             width: 400px;
             transform: translateY(-200px);
+        }
+
+        img:nth-child(2) {
+            width: 400px;
+            transform: translateX(-150px) translateY(-300px);
+            border: 10px solid rgb(255, 242, 233);;
         }
     }
 }
@@ -188,8 +212,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    transition: 1s;
+    height: 120px;
+    transition: .5s;
     z-index: 10;
 }
 
@@ -208,7 +232,7 @@ header {
     text-align: center;
 
     img {
-        width: 160px;
+        width: 200px;
     }
 }
 
@@ -229,7 +253,7 @@ nav {
             color: $gold;
             margin-right: 40px;
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 400;
             cursor: pointer;
 
             ul {
@@ -237,7 +261,7 @@ nav {
                 position: absolute;
                 top: 40px;
                 left: 0;
-                background: #fdf9f2;
+                background: $brown;
                 display: none;
 
                 li {
@@ -246,16 +270,13 @@ nav {
                         padding: 20px;
                         display: block;
                     }
-
-                    a:hover {
-                        color: black;
-                    }
                 }
             }
 
             a {
                 text-decoration: none;
                 color: $gold;
+                font-weight: 500;
                 font-family: 'Quicksand', sans-serif;
             }
 
@@ -289,42 +310,33 @@ nav {
 
 .slider {
     height: 100vh;
-    background: url("../../img/slider-bg.jpg") no-repeat center right;
-    background-size: cover;
+    width: 100%;
+    position: relative;
 }
 
 .slider-page {
     display: flex;
-    height: 100%;
-}
-
-.slider-content {
-    height: 100%;
-    display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-.slider-cake {
-    display: flex;
-    justify-content: center;
-
-    img {
-        width: 60%;
-    }
-}
-
-.slider-text {
-    text-align: center;
-    width: 500px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
 
     h1 {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
-        font-size: 4em;
-        color: $lightblack;
+        font-size: 6em;
+        color: white;
+    }
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 3em;
+        color: white;
+        margin-bottom: 20px;
     }
 
     .slider-placeholder {
@@ -335,14 +347,71 @@ nav {
     }
 
     p {
+        width: 600px;
         margin-bottom: 30px;
         letter-spacing: 1px;
         line-height: 1.5;
+        color: white;
+        text-align: center
     }
 
     a {
         @include button();
     }
+}
+
+.slider-cake {
+    background: url("../../img/classic-cake.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.slider-chocolate {
+    background: url("../../img/chocolate.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.slider-mousse {
+    background: url("../../img/mousse-cake.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.slider-fade {
+    -webkit-animation-name: slider-fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slider-fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slider-fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+  
+@keyframes slider-fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: $gold;
 }
 
 
@@ -401,7 +470,7 @@ nav {
 
 .cookie-selection-wrapper {
     width: 100%;
-    background: url("../../img/flour.jpg") no-repeat center bottom;
+    background: url("../../img/flour.webp") no-repeat center center;
     background-size: cover;
     padding: 50px 0;
     color: white;
@@ -444,6 +513,7 @@ nav {
 
         img {
             margin: 0 30px;
+            border-radius: 5px;
         }
     }
 
@@ -515,6 +585,13 @@ nav {
         display: inline-block;
         margin: 30px 0;
     }
+
+    h2 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        margin: 20px 0;
+        color: $gold;
+    }
 }
 
 .right-align-data {
@@ -535,34 +612,17 @@ nav {
 
 .classic-cake-header {
     @include subpage-header();
-    background: url("../../img/classic-cake.jpg") no-repeat center center;
+    background: url("../../img/classic-cake-4.webp") no-repeat center top;
     background-size: cover;
 }
 
-/* .classic-cake {
-
-    ul {
-        list-style: decimal;
-        padding-left: 30px;
-        letter-spacing: 1px;
-
-        li {
-            margin-bottom: 20px;
-
-            p {
-                margin: 5px 0 5px 10px;
-            }
-        }
-    }
-}
- */
 
 /* MOUSSE CAKE
 ------------------------------------------------ */
 
 .mousse-cake-header {
     @include subpage-header();
-    background: url("../../img/mousse-cake.jpg") no-repeat center center;
+    background: url("../../img/mousse-cake.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -572,7 +632,7 @@ nav {
 
 .tart-latte-header {
     @include subpage-header();
-    background: url("../../img/tart-latte-cake.jpg") no-repeat center center;
+    background: url("../../img/tart-latte-cake.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -582,7 +642,7 @@ nav {
 
 .bonbon-header {
     @include subpage-header();
-    background: url("../../img/bon-bon.jpg") no-repeat center center;
+    background: url("../../img/bonbon.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -592,7 +652,7 @@ nav {
 
 .chocolate-header {
     @include subpage-header();
-    background: url("../../img/chocolate.jpg") no-repeat center center;
+    background: url("../../img/chocolate.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -602,7 +662,7 @@ nav {
 
 .macaron-header {
     @include subpage-header();
-    background: url("../../img/macaron.jpg") no-repeat center center;
+    background: url("../../img/macaron.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -612,12 +672,12 @@ nav {
 
 .about-us-header {
     @include subpage-header();
-    background: url("../../img/pink-cake.jpg") no-repeat center center;
+    background: url("../../img/pink-cake.webp") no-repeat center center;
     background-size: cover;
 }
 
 .about-us {
-    background: url("../../img/about-us-bg.jpg") no-repeat center center;
+    background: url("../../img/about-us-bg.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -668,12 +728,12 @@ nav {
 
 .contact-header {
     @include subpage-header();
-    background: url("../../img/contact.jpg") no-repeat center center;
+    background: url("../../img/contact.webp") no-repeat center center;
     background-size: cover;
 }
 
 .contact {
-    background: url("../../img/gold-2.jpg") no-repeat center center;
+    background: url("../../img/gold-2.webp") no-repeat center center;
     background-size: cover;
     padding: 50px 0;
 }
@@ -692,6 +752,11 @@ nav {
 
     .contact-email, .contact-phone {
         margin-bottom: 30px;
+
+        p ~ p {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
     }
 
     .contact-address {
@@ -729,12 +794,19 @@ nav {
     }
 }
 
+.map {
+
+    iframe {
+        width: 100%;
+    }
+}
+
 
 /* FOOTER
 ------------------------------------------------ */
 
 footer {
-    background: $lightblack;
+    background: $brown;
 }
 
 .footer-boxes {
@@ -784,11 +856,8 @@ footer {
     border-color: rgba(255, 255, 255, .2);
 }
 
-.footer-contact {
-    padding-top: 100px;
-}
-
 .footer-about-us {
+    position: relative;
 
     img {
         width: 100px;
@@ -804,27 +873,22 @@ footer {
 }
 
 .footer-social {
-    background: #111111;
-    padding: 30px 0;
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -30px;
 
     svg {
         width: 20px;
         height: 20px;
-        fill: $gold;
-    }
-
-    div {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 1px solid $gold;
-        displaY: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0 10px;
-        cursor: pointer;
+        fill: $gold;
+        transition: 1s;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
     }
 }
 
@@ -911,8 +975,25 @@ footer {
         }
     }
 
+    .cake-image-right {
+
+        img:nth-child(1) {
+            transform: translateY(-150px) !important;
+        }
+
+        img:nth-child(2) {
+            width: 400px;
+            transform: translateX(-150px) translateY(-300px);
+            border: 10px solid rgb(255, 242, 233);;
+        }
+    }
+
     .cake-images-placeholder {
         display: none;
+    }
+
+    .footer-social {
+        bottom: -50px;
     }
 }
 
@@ -1008,23 +1089,29 @@ footer {
 
     .footer-boxes {
         flex-direction: column;
+        padding: 0;
     }
 
     .footer-box {
         width: 100%;
-        margin-bottom: 30px;
+        margin-top: 60px;
     } 
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .slider-text {
-        width: 100%;
-    }
+    .slider-page {
 
-    .slider-content {
-        flex-grow: unset;
+        h1 {
+            text-align: center;
+            font-size: 4em;
+        }
+
+        p {
+            width: 100%;
+            padding: 0 20px;
+        }
     }
 
     .said-about-us {
@@ -1067,10 +1154,29 @@ footer {
 
     .cake-box {
         width: 100%;
+        padding: 40px;
+    }
+
+    .cake-images {
+        display: flex;
+    }
+
+    .cake-image-right {
+        width: 100%;
+
+        img:nth-child(1) {
+            width: 100% !important;
+            transform: translateY(0) !important;
+        }
+
+        img:nth-child(2) {
+            width: 100% !important;
+            transform: translateY(0) !important;
+            border: none !important;
+        }
     }
 
     .contact-boxes {
-        
         flex-direction: column;
     }
 }

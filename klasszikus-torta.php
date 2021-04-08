@@ -2,7 +2,7 @@
 
 <div class="classic-cake-header subpage-header">
     <h1>Klasszikus torták</h1>
-    <p>A klasszikus tortaforma szerint készített kézműves tortáimat több réteg piskóta és krém felépítésben a könnyed elegancia jellemzi, természetesen a saját egyéniségem mellett ugyanolyan fontos a te elképzelésed is.</p>
+    <p>A klasszikus tortaforma szerint készített kézműves tortáimat több réteg piskóta és krém felépítésben a könnyed elegancia jellemzi.</p>
 </div>
 
 <div class="classic-cake cake-box">
@@ -50,24 +50,33 @@
         <li>Könnyed gyömölcskrémmel töltött torta</li>
         <li>Belga csokoládé krémmel töltött torta</li>
         <li>Kávés trüffelkrémmel töltött torta</li>
-        <li>Habos karamell krém- sóskaramellel és csokoládéval</li>
+        <li>Habos karamell krém - sóskaramellel és csokoládéval</li>
         <li>Habos gesztenye krémmel töltött torta - savanykás meggyel</li>
         <li>Lágy kókuszkrémmel töltött torta - gyümölcsel</li>
         <li>Angol citrom krémmel töltött torta - kellemes levendula zselével</li>
     </ul>
-    <img class="decor-1" src="./img/decor-1.png" alt="">
-    <img class="decor-2" src="./img/decor-2.png" alt="">
+    <h3>Árak</h3>
+    <p>800-1000 Ft/szelet – 8 szeletes mérettől rendelhető</p>
+    <p><i>Az ár minden esetben a dekorációs elemek mennyiségétől, illetve az elkészítés bonyolultságától függ.</i></p>
+    <img src="./img/gluten-free.webp" alt="">
+    <img src="./img/lactos-free.webp" alt="">
+    <img class="decor-logo" src="./img/logo-decor.webp" alt="">
+    <img class="decor-1" src="./img/decor-1.webp" alt="">
+    <img class="decor-2" src="./img/decor-2.webp" alt="">
+    <img class="decor-3" src="./img/cocoa-beans.webp" alt="">
 </div>
 
 <div class="classic-cake-images cake-images">
     <div class="cake-image-left">
-        <img src="./img/classic-cake-2.jpg" alt="">
+        <img src="./img/classic-cake-7.webp" alt="">
+        <img src="./img/classic-cake-5.webp" alt="">
     </div>
     <div class="cake-images-placeholder">
         <span></span>
     </div>
     <div class="cake-image-right">
-        <img src="./img/classic-cake-3.jpg" alt="">
+        <img src="./img/classic-cake-6.webp" alt="">
+        <img src="./img/classic-cake-8.webp" alt="">
     </div>
 </div>
 

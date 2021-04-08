@@ -12,31 +12,39 @@
     <p><i>Ehhez ajánlom: </i>Az egyedi Royal bonbon kitűnő ajándék mindenkinek, mindenkorra, vagy csak Önmagad kényeztetésére.</p>
     <h3>Bon-Bon fajták</h3>
     <ul>
-        <li>AfterEight - étcsoki</li>
-        <li>Feketebors - sóskaramell - étcsoki</li>
-        <li>Málna - étcsoki</li>
-        <li>Tejeskávé - tejcsoki</li>
-        <li>Sósmogyoró - karamell - tejcsoki</li>
-        <li>Marcipán - tejcsoki</li>
-        <li>Levendula - fehér csoki</li>
+        <li>AfterEight - étcsokiburokban</li>
+        <li>Feketebors - sóskaramell - étcsokiburokban</li>
+        <li>Málna - étcsokiburokban</li>
+        <li>Tejeskávé - tejcsokiburokban</li>
+        <li>Sósmogyoró - karamell - tejcsokiburokban</li>
+        <li>Marcipán - tejcsokiburokban</li>
+        <li>Levendula - fehér csokiburokban</li>
         <li>Pisztácia - fehér csoki</li>
-        <li>Lime-kókusz - fehér csoki</li>
+        <li>Lime-kókusz - fehér csokiburokban</li>
         <li>Gyömbér - étcsoki trüffel</li>
         <li>Rumos étcsoki trüffel</li>
     </ul>
-    <img class="decor-1" src="./img/decor-1.png" alt="">
-    <img class="decor-2" src="./img/decor-2.png" alt="">
+    <h3>Árak</h3>
+    <p>200-300 ft/darab</p>
+    <img src="./img/gluten-free.webp" alt="">
+    <img src="./img/lactos-free.webp" alt="">
+    <img class="decor-logo" src="./img/logo-decor.webp" alt="">
+    <img class="decor-1" src="./img/decor-1.webp" alt="">
+    <img class="decor-2" src="./img/decor-2.webp" alt="">
+    <img class="decor-3" src="./img/cocoa-beans.webp" alt="">
 </div>
 
 <div class="bonbon-images cake-images">
     <div class="cake-image-left">
-        <img src="./img/bon-bon-2.jpg" alt="">
+        <img src="./img/bonbon-1.webp" alt="">
+        <img src="./img/bonbon-2.webp" alt="">
     </div>
     <div class="cake-images-placeholder">
         <span></span>
     </div>
     <div class="cake-image-right">
-        <img src="./img/bon-bon-3.jpg" alt="">
+        <img src="./img/bonbon-4.webp" alt="">
+        <img src="./img/bonbon-3.webp" alt="">
     </div>
 </div>
 

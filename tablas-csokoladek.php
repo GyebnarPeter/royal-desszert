@@ -12,26 +12,32 @@
     <p><i>Ehhez ajánlom: </i>Ajándéknak természetesen tökéletes választás, ahogyan hétköznapi nassinak is. Ne feledkezz meg magadról sem! Bizony bármikor megérdemelsz egy ilyen fincsi csokit.</p>
     <h3>Táblás csoki ízlés szerint összeválogatva</h3>
     <ul>
-        <li>Kiegészítők: aszalt áfonya, kandírozott narancs, málna, eper, törökmogyoró, pisztácia, mandula, levendula</li>
         <li>Étcsokoládé</li>
         <li>Fehér csokoládé</li>
         <li>Tejcsokoládé</li>
-        <li>Fehér csokoládé, ruby csokoládéval</li>
-        <li>Tejcsokoládé narancs ízesétő csokoládéval</li>
+        <li>Kiegészítők: aszalt áfonya, kandírozott narancs, málna, eper, törökmogyoró, pisztácia, mandula, levendula…</li>
+        <li>Fehér csokoládé - ruby csokoládéval kiegészítve</li>
+        <li>Tejcsokoládé narancs ízesítésű csokoládéval kiegészítve</li>
     </ul>
-    <img class="decor-1" src="./img/decor-1.png" alt="">
-    <img class="decor-2" src="./img/decor-2.png" alt="">
+    <h3>Árak</h3>
+    <p>900 ft/tábla</p>
+    <img src="./img/gluten-free.webp" alt="">
+    <img src="./img/lactos-free.webp" alt="">
+    <img class="decor-logo" src="./img/logo-decor.webp" alt="">
+    <img class="decor-1" src="./img/decor-1.webp" alt="">
+    <img class="decor-2" src="./img/decor-2.webp" alt="">
+    <img class="decor-3" src="./img/cocoa-beans.webp" alt="">
 </div>
 
 <div class="chocolate-images cake-images">
     <div class="cake-image-left">
-        <img src="./img/chocolate-2.jpg" alt="">
+        <img src="./img/chocolate-2.webp" alt="">
     </div>
     <div class="cake-images-placeholder">
         <span></span>
     </div>
     <div class="cake-image-right">
-        <img src="./img/chocolate-3.jpg" alt="">
+        <img src="./img/chocolate-3.webp" alt="">
     </div>
 </div>
 

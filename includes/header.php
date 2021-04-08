@@ -15,10 +15,10 @@
     <div class="header-wrapper">
         <header>
             <div class="header-logo">
-                <a href="index.php"><img src="./img/logo-gold.png" alt=""></a>
+                <a href="index.php"><img src="./img/logo-white.webp" alt=""></a>
             </div>
             <nav>
-                <img src="./img/logo-gold.png" alt="">
+                <img src="./img/logo-gold.webp" alt="">
                 <ul>
                     <li><a href="index.php">Főoldal</a></li>
                     <li class="opening-item">
